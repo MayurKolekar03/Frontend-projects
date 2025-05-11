@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="infoForm" class="form-card">
+            <h2>Registration</h2>
+
+            <div class="input-group">
+                <input type="text" id="fullName" name="fullName" placehold-er="Full Name" required>
+                <input type="text" id="username" name="username" placehold-er="Username" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" name="email" placehold-er="Email" required>
+                <input type="tel" id="contactNo" name="contactNo" placehold-er="Phone Number" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" name="password" place-holder="Password" required>
+                <input type="password" id="rePassword" name="rePassword" placeholder="Confirm Password" required>
+            </div>
+
+            <div class="input-group">
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Gender</option>
+                    <option value="male"><b>Male</b></option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <textarea id="address" name="address" placeholder="Enter your ad-dress" rows="3" required></textarea>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" re-quired>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="newsSubscription">
+                <label for="newsSubscription">Already have an account?</label>
+            </div>
+
+            <!-- Submit and Reset Buttons -->
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="button" id="resetButton">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("resetButton").addEventListener("click", func-tion() {
+            document.getElementById("infoForm").reset();
+        });
+    </script>
+</body>
+</html>
