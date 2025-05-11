@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #3a0088, #ff0088);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input-group input, .input-group select {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-group input::placeholder, .input-group select {
+    color: #ddd;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2); 
+    border: none;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 10px;
+    caret-color: white; 
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.97); 
+}
+
+/* File Input */
+input[type="file"] {
+    display: inline-block;
+    border: none;
+    background: none;
+    font-size: inherit;
+    color: inherit;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.checkbox-group input {
+    accent-color: white;
+}
+
+/* Button Styles */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background: white;
+    color: #3a0088;
+}
+
+button[type="submit"]:hover {
+    background: #ddd;
+}
+
+/* Reset Button */
+button[type="button"] {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+button[type="button"]:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
